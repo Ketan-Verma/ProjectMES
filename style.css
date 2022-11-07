@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --clr1: #6810B7;
+    --clr2: #0CA5DC;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    all: unset;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0.25em;
+    margin: 0.5em;
+}
+
+nav li:hover {
+    cursor: pointer;
+}
+
+nav .active {
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, var(--clr1), var(--clr2));
+    border-image-slice: 1;
+}
+
+.logo {
+    padding: 0.5em 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.home {
+    position: relative;
+    /* height: 100vh; */
+    padding-top: 2em;
+}
+
+.glass {
+    position: absolute;
+    max-width: 600px;
+    width: 50%;
+    top: 10%;
+    left: 5%;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.glass h3 {
+    font-size: 2em;
+}
+
+.glass p {
+    font-size: 1.5em;
+}
+
+.home img {
+    /* opacity: 90%; */
+    filter: brightness(60%);
+}
+
+/* about */
+.about {
+    /* height: 100vh; */
+    padding-top: 1em;
+}
+
+.about .card {
+    padding: 1em;
+    /* max-width: 480px; */
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .info,
+.about figure {
+    max-width: 480px;
+    padding: 1em;
+}
+
+.card figure {
+    max-width: 360px;
+}
+
+.card .info {
+    margin-top: 1em;
+}
+
+.card h2,
+.card p {
+    padding: 0.25em 0em;
+}
+
+.card h2 {
+    background: -webkit-linear-gradient(var(--clr1), var(--clr2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.75em;
+}
+
+.services figure {
+    width: fit-content;
+    margin: auto;
+}
+
+.services img {
+    max-height: 70vh;
+}
+
+.services {
+    height: 100%;
+    padding-top: 3em;
+}
+
+.corefuncns {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.corefuncns h2 {
+    margin: 1em;
+}
+
+.benifits {
+    margin-top: 1em;
+}
+
+.benifits h1 {
+    text-align: center;
+    font-size: 2.25em;
+}
+
+.benifits ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* margin:  1em; */
+    margin-top: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.benifits li {
+    font-size: 1.5em;
+    padding: 2em 1em;
+    background-image: linear-gradient(to left, #6910b71d, #0ca5dc14);
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.youtube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube h1 {
+    font-size: 2.2em;
+    margin: 1em;
+}
+
+.contact {
+    padding-top: 2.5em;
+}
+
+.contact form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    max-width: 620px;
+    margin: auto;
+}
+
+.contact label {
+    /* padding: ; */
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--clr1), var(--clr2));
+    border-image-slice: 1;
+    outline: none;
+    font-size: 1.25em;
+}
+
+#sub-btn {
+    margin: 1em auto;
+    max-width: 200px;
+    background-image: linear-gradient(to right, var(--clr1), var(--clr2));
+    color: white;
+    border: none;
+}
+
+#sub-btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--clr2), var(--clr1));
+
+}
+
+footer {
+    background-color: rgb(56, 55, 55);
+    min-height: 20vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    .glass {
+        display: block;
+        font-size: 80%;
+        bottom: 10px;
+        top: auto;
+        left: 25%;
+        /* top:20px; */
+    }
+
+    .home {
+        height: auto;
+    }
+
+    .benifits li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .services h1,.services h2{
+        font-size: 1.5em;
+    }
+    .glass {
+        font-size: 70%;
+    }
+
+    .info {
+        width: 100%;
+    }
+    .card {
+        flex-direction: column;
+        /* display: none; */
+    }
+
+    .benifits ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benifits li {
+        font-size: 1em;
+        padding: 1em;
+        /* width: 480px; */
+        width: 90%;
+        /* height: 60px; */
+
+    }
+}
+
+.youtube * {
+    max-width: 100%;
+}
+@media only screen and (min-width: 700px) {
+ .glass{
+    
+    background-color: rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+ }
+}
+@media only screen and (max-width: 700px) {
+.glass{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.5));
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+    margin: 0;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.945);
+    /* padding: 2em; */
+    
+}
+}
