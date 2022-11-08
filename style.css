@@ -206,6 +206,9 @@ img {
 .youtube h1 {
     margin: 1em;
 }
+.youtube p {
+    padding: 0.5em;
+}
 
 .contact {
     padding-top: 2.5em;
