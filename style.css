@@ -53,11 +53,7 @@ nav li {
 nav li:hover {
     cursor: pointer;
 }
-nav .active {
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to right, var(--clr1), var(--clr2));
-    border-image-slice: 1;
-}
+
 .logo {
     padding: 0.5em 1em;
 }
