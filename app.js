@@ -8,7 +8,7 @@ header.addEventListener("click",function(e){
 
 let imgs = ["./images/bgmain.JPG","./images/bg2.JPG","./images/bg3.JPG"]
 let hs = ["MES","Boom!","Good"]
-let ps = ["A software that is designed to optimise manufacturing processes...","hello this is MES"," our services Good, others bad"]
+let ps = ["A software that is designed to optimise manufacturing processes...","hello this is MES","catch phrase"]
 let img = document.getElementById("img-home");
 let h = document.getElementById("glass-h")
 let p = document.getElementById("glass-p")
