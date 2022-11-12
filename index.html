@@ -121,7 +121,6 @@
           </ul>
         </div>
         <div class="youtube">
-          <h1>What is MES ?</h1>
           <iframe
             width="560"
             height="315"
@@ -136,14 +135,16 @@
       <div id="contact" class="contact">
         <p>If you are intrested to work with us</p>
         <h1>Contact Us</h1>
-        <form action="POST">
+        <form action="https://formsubmit.co/d73664383a9a620b91bea4fdd963b7e0" method="POST">
           <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required />
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required/>
           <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input id="sub-btn" type="button" value="Send Message" />
+          <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+          <input id="sub-btn" type="submit" value="Send Message" />
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://ketan-verma.github.io/ProjectMES/">
         </form>
       </div>
       <footer></footer>
