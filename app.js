@@ -12,9 +12,10 @@ let ps = ["A software that is designed to optimise manufacturing processes...","
 let img = document.getElementById("img-home");
 let h = document.getElementById("glass-h")
 let p = document.getElementById("glass-p")
+img.src = imgs[0];
 
-setInterval(tictic, 5000);
-let i = 0 ;
+setInterval(tictic, 4000);
+let i = 1 ;
 function tictic() {
 img.src = imgs[i];
 h.innerText = hs[i]
