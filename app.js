@@ -6,7 +6,7 @@ header.addEventListener("click",function(e){
    e.target.classList.add("active");
 });
 
-let imgs = ["./images/bgmain.JPG","./images/bg2.JPG","./images/bg3.JPG"]
+let imgs = ["./images/img1.JPG","./images/img2.JPG","./images/img3.png","./images/img4.png"]
 let hs = ["MES","Boom!","Good","another"]
 let ps = ["A software that is designed to optimise manufacturing processes...","hello this is MES","catch phrase","catch phrase"]
 let img = document.getElementById("img-home");
