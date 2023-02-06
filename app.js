@@ -19,3 +19,13 @@ if(i>=imgs.length)i=0;
 
 }
 
+function toogle(){
+ let nav = document.getElementById("nav-bar");
+ if(nav.classList.contains("nav-bar")){
+    nav.classList.remove("nav-bar");
+   }else{
+      nav.classList.add("nav-bar");
+ }
+ console.log(nav.classList.contains("nav-bar"))
+}
+  
