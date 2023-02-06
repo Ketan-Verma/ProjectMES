@@ -254,7 +254,6 @@ footer {
 @media only screen and (max-width: 800px) {
 
 
-   
     .services h2 {
         font-size: 1.5em;
     }
@@ -270,7 +269,11 @@ footer {
 
     .card {
         flex-direction: column;
+        text-align: justify;
         /* display: none; */
+    }
+    .card2{
+        flex-direction: column-reverse;
     }
 
     .benifits ul {
