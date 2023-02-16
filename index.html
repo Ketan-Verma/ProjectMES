@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta name="description" content="We provide best services to track and trace">
-  <meta name="keywords" content="track,trace,manufacturing">
+    <meta
+      name="description"
+      content="We provide best services to track and trace"
+    />
+    <meta name="keywords" content="track,trace,manufacturing" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
-    <link rel="icon" 
-      type="image/png" 
-      href="https://cdn-icons-png.flaticon.com/512/3273/3273397.png" />
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/3273/3273397.png"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>MES</title>
   </head>
@@ -20,9 +28,7 @@
         <h1>MES</h1>
       </div>
       <div class="togglebtn" onclick="toogle()">
-        <span class="material-symbols-outlined">
-          menu
-          </span>
+        <span class="material-symbols-outlined"> menu </span>
       </div>
       <ul id="nav-bar" class="nav-bar">
         <a href="#home" onclick="toogle()">
@@ -40,27 +46,46 @@
       </ul>
     </nav>
     <div class="main-web">
-      <div id="home" class="home">
-        <figure>
-          <img id="img-home" src=""  />
-        </figure>
+      <div class="grad1">
+
+      <!-- hero -->
+      <div id="home" class="hero">
+        <div class="herowrap">
+          <h1>Digitize your first step with us!</h1>
+          <p>
+            Let's <span id="tgrad">Track-N-Tracee</span> help you in digitizing
+            your supply chain
+          </p>
+          <h3 id="contact-btn"><a href="#about"> Get Started </a></h3>
+        </div>
+        <div class="figure">
+          <img src="./images/mask.png" alt="" />
+        </div>
       </div>
+    <!-- things -->
+      <div class="things">
+        <ul>
+          <li>OEE</li>
+          <li>Track & Trace</li>
+          <li>Management Systems</li>
+          <li>SCADA</li>
+        </ul>
+      </div>
+      <!--  -->
+    </div>
+      
       <div class="about" id="about">
         <div class="card">
           <div class="info">
-            <h2>What is MES ?</h2>
+            <h2>What we do ?</h2>
             <p>
-              Manufacturing execution systems (MES) are computerised systems
-              used in manufacturing to track and document the transformation of
-              raw materials to finished goods. MES provides information that
-              helps manufacturing decision makers understand how current
-              conditions on the plant floor can be optimised to improve
-              production output
+              At track-N-trace, we help businesses to design, develop and implement custom traceability solutions to cater to your business needs 
+
             </p>
             <p>
-              MES works as real time monitoring system to enable the control of
+              <!-- Track-N-trace works as real time monitoring system to enable the control of
               multiple elements of the production process (e.g. inputs,
-              personnel, machines and support services)
+              personnel, machines and support services) -->
             </p>
           </div>
           <figure>
@@ -72,41 +97,49 @@
             <img src="./images/ill2.png" alt="" />
           </figure>
           <div class="info">
-            <h2>Why do you need an MES ?</h2>
+            <h2>Our Misson</h2>
             <p>
-              Manufacturing is growing more competitive and complex, demanding
-              faster turnaround time, lower cost production, and stringent
-              compliance to industry standards and regulations. Using real-time
-              manufacturing data to drive business decisions is imperative,
-              however 85% of manufacturers are still using paper and
-              spreadsheets to manage their production floor.
+              track-N-tracee is focused on developing reliable tracking solution that enhances supply chain visibility, minimizes risk and improve overall efficiency by empowering the user to make real time decisions. 
+            </p><p> We are also working to develop highly configurable, out of the box traceability solution that industries can customize to their interest
+              In short term, we look to partner with our potential client to understand their needs and to develop products specific for them.
             </p>
             <p>
-              ERP and other business systems capture the input of orders and
+              <!-- ERP and other business systems capture the input of orders and
               output of invoices; however, when it comes to production, the
               insights these systems provide are too shallow and unreliable to
-              optimize operations.
+              optimize operations. -->
             </p>
           </div>
         </div>
       </div>
       <div class="services" id="services">
-        <div class="corefuncns">
+        <div style="display: none;" class="corefuncns">
           <h1>MES Core Functions</h1>
           <figure>
             <img src="./images/chart.png" alt="" />
           </figure>
         </div>
         <div class="benifits">
-          <h1>MES Benifits</h1>
+          <h1>Our Products and Services</h1>
+          <p>At track-N-tracee, we work directly with businesses to provide design consultation</p>
           <ul>
-            <li>
+            <li><p>Overall Equipment Effectiveness</p></li>
+            <li><p>Track & Trace</p></li>
+            <li><p>Quality Management System</p></li>
+            <li><p>Order Management system</p></li>
+            <li><p>Recipe Management system</p></li>
+            <li><p>Inventory Management System</p></li>
+            <li><p>SCADA</p></li>
+            <li><p>Baggage Management System</p></li>
+            <li><p>Warehouse Management System</p></li>
+            <li><p>Fleet Management</p></li>
+            <!-- <li>
               <img src="./images/fluent_timer-24-regular.svg" alt="" />
               <p>Gain Real Time Visibility Into Production</p>
             </li>
             <li>
               <img src="./images/icon-park_play-cycle.svg" alt="" />
-              <p>Analyse Cycle Time And Improve Predictability</p>
+              <p>Track & Trace</p>
             </li>
             <li>
               <img src="./images/bx_error.svg" alt="" />
@@ -118,15 +151,17 @@
             </li>
             <li>
               <img src="./images//fa6-solid_money-bill-trend-up.svg" alt="" />
-              <p>Reduce Overall Costs</p>
+              <p>Overall Equipment Effectiveness</p>
             </li>
             <li>
               <img src="./images/ant-design_cloud-server-outlined.svg" alt="" />
               <p>Better And Easier System Management</p>
-            </li>
+            </li> -->
           </ul>
+          
         </div>
-        <div class="youtube">
+
+        <div  style="display: none;" class="youtube">
           <iframe
             width="560"
             height="315"
@@ -137,29 +172,49 @@
             allowfullscreen
           ></iframe>
         </div>
+        <div class="founder">
+          <h1>About Founder</h1>
+          <figure>
+            <img src="./images/sagar.png" alt="">
+          </figure>
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/sagarmotwani"><img src="./images/linkedin.png" alt=""></a></li>
+            <li><a href="mailto:sagarmotwani1997@gmail.com"><img src="./images/email.png" alt=""></a></li>
+          </ul>
+          <p>Sagar is currently working for a battery manufacturer to help them design the next generation of Manufacturing Execution System. After graduating for Purdue University with M.S. in Global Supply Chain Management, he is determined to help businesses determine digitize their supply chain. After helping startups in automotive industry like Rivian and battery industry like Quantumscape, he is excited to work with various industries to solve complex problems by providing highly configurable easy to use solutions.</p>
+        </div>
       </div>
       <div id="contact" class="contact">
         <p>If you are interested to work with us</p>
         <h1>Contact Us</h1>
-        <form action="https://formsubmit.co/d73664383a9a620b91bea4fdd963b7e0" method="POST">
+        <form
+          action="https://formsubmit.co/d73664383a9a620b91bea4fdd963b7e0"
+          method="POST"
+        >
           <label for="name">Full Name</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required/>
+          <input type="email" name="email" id="email" required />
           <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
           <input id="sub-btn" type="submit" value="Send Message" />
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://ketan-verma.github.io/ProjectMES/">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://ketan-verma.github.io/ProjectMES/"
+          />
         </form>
       </div>
       <footer></footer>
     </div>
     <script src="app.js"></script>
-
   </body>
-  
 </html>
 <!-- 6810B7 to 0CA5DC -->
-
-
