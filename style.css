@@ -52,11 +52,7 @@ nav li {
 nav li:hover {
     cursor: pointer;
 }
-/* nav .active {
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to right, var(--clr1), var(--clr2));
-    border-image-slice: 1;
-} */
+
 .logo {
     padding: 0.5em 1em;
 }
@@ -439,9 +435,9 @@ nav{
     /* border: solid black 1px; */
     
 }
-.hero div{
+/* .hero div{
     width: 50%;
-}
+} */
 .hero *{
     /* background-color: #0ca5dc2c; */
 }
@@ -571,4 +567,30 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
+}
+.logo a{
+    cursor: pointer;
+}
+@media only screen and (min-width: 900px) {
+    .hero *{
+        /* border: 1px solid dodgerblue; */
+    }
+    .hero {
+        /* border: 1px solid dodgerblue; */
+        display:flex ;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .hero img{
+        min-width: 40vw;
+        height: auto;
+        /* min-height: 90vh; */
+    }
+    .herowrap{
+        width: 580px;
+    }
+    .card img{
+        padding: 1em;
+    }
 }
